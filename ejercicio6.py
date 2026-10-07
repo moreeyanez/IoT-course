@@ -70,12 +70,6 @@ class TemperatureSensor:
             print(f"{key}: {value}")
 
     def save_as_json(self):
-        '''
-        sensorDict = self.asDictionary()
-        with open('sensorInfo.json', 'w') as json_file:
-            json.dump(sensorDict, json_file, indent=4)
-        print("Sensor information saved as JSON.")
-        '''
         sensorDict = self.asDictionary()
         json.dump(sensorDict,open("infoSensor.json","w"))
         print("Sensor information saved as JSON.")
